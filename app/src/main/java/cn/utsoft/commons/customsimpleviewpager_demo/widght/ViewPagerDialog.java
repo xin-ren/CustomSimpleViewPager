@@ -1,4 +1,4 @@
-package cn.utsoft.commons.customsimpleviewpager_demo;
+package cn.utsoft.commons.customsimpleviewpager_demo.widght;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,6 +15,9 @@ import android.widget.LinearLayout;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import cn.utsoft.commons.customsimpleviewpager_demo.R;
+import cn.utsoft.commons.customsimpleviewpager_demo.utils.ScalerPageTransformer;
 
 /**
  * Created by 任新 on 2017/4/12 10:07.

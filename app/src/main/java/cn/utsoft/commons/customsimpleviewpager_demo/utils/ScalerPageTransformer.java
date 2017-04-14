@@ -1,4 +1,4 @@
-package cn.utsoft.commons.customsimpleviewpager_demo;
+package cn.utsoft.commons.customsimpleviewpager_demo.utils;
 
 import android.annotation.SuppressLint;
 import android.support.v4.view.ViewPager;

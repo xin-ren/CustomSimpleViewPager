@@ -1,4 +1,4 @@
-package cn.utsoft.commons.customsimpleviewpager_demo;
+package cn.utsoft.commons.customsimpleviewpager_demo.widght;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -106,7 +106,7 @@ public class HeapFrameLayout extends ViewGroup {
 
                 //重新创建ImageView
                 removeAllViews();
-                for(int i=0;i < HeapFrameLayout.this.data.size();i++){
+                for(int i = 0; i < HeapFrameLayout.this.data.size(); i++){
                     ImageView imageView = createImageView();
                     addView(imageView);
                     Log.i(LOG_TAG,"addview "+imageView);

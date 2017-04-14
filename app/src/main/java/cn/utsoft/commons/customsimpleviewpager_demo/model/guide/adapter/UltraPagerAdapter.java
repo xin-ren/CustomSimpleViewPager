@@ -1,4 +1,4 @@
-package cn.utsoft.commons.customsimpleviewpager_demo;
+package cn.utsoft.commons.customsimpleviewpager_demo.model.guide.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.marno.rapidlib.manager.GlideManager;
+
+import cn.utsoft.commons.customsimpleviewpager_demo.R;
 
 
 /**

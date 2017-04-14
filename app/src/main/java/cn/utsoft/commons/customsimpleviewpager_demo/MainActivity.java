@@ -11,6 +11,11 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.utsoft.commons.customsimpleviewpager_demo.model.guide.adapter.UltraPagerAdapter;
+import cn.utsoft.commons.customsimpleviewpager_demo.utils.GlideCircleTransform;
+import cn.utsoft.commons.customsimpleviewpager_demo.widght.HeapFrameLayout;
+import cn.utsoft.commons.customsimpleviewpager_demo.widght.ViewPagerDialog;
+
 
 public class MainActivity extends AppCompatActivity {
 
