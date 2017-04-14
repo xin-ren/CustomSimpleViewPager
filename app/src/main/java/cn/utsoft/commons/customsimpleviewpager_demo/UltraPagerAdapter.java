@@ -14,21 +14,21 @@ import com.marno.rapidlib.manager.GlideManager;
 /**
  * Created by 任新 on 2017/4/11 10:48.
  * Function:
- * Desc: 图片资源来自于UTOUU科技有限公司切图
+ * Desc:
  */
 public class UltraPagerAdapter extends PagerAdapter {
     private boolean isMultiScr;
 
-    private int[] mPicture = {R.drawable.img_subscribe,
-            R.drawable.img_talk,
-            R.drawable.img_free,
-            R.drawable.img_payment,
-            R.drawable.img_fitting,
-            R.drawable.img_take_clothes};
+    private int[] mPicture = {R.drawable.one,
+            R.drawable.two,
+            R.drawable.three,
+            R.drawable.four,
+            R.drawable.five,
+            R.drawable.six};
 
-    private String[] mTitles = {"预约", "店内洽谈", "免费量体", "线上付款", "到店试衣", "取衣"};
-    private String[] mContents = new String[]{"在线预约，时间自由挑选", "到店交流，需求一步到位", "量体裁衣，数据精准保留", "订单生成，线上一键支付",
-            "到店试衣，精致细节调整", "取衣便捷，到店快递任选"};
+    private String[] mTitles = {"1", "2", "3", "4", "5", "6"};
+    private String[] mContents = new String[]{"首先", "其次", "然后", "下一步",
+            "紧接着", "完成"};
 
     public UltraPagerAdapter(boolean isMultiScr) {
         this.isMultiScr = isMultiScr;
