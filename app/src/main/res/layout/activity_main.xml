@@ -6,14 +6,29 @@
     android:layout_height="match_parent"
     android:background="#fff"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     tools:context="cn.utsoft.commons.customsimpleviewpager_demo.MainActivity">
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
         android:layout_height="wrap_content"
         android:text="demo演示"
         android:textAllCaps="false"
         android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重叠控件显示"
+        android:layout_marginTop="8dp"/>
+
+    <cn.utsoft.commons.customsimpleviewpager_demo.HeapFrameLayout
+        android:id="@+id/hf"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
 </LinearLayout>
