@@ -1,34 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context="cn.utsoft.commons.customsimpleviewpager_demo.MainActivity">
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_marginTop="8dp"
-        android:layout_height="wrap_content"
-        android:text="demo演示"
-        android:textAllCaps="false"
-        android:layout_centerInParent="true"/>
+    <include layout="@layout/layout_title_bar" />
 
-    <Button
-        android:id="@+id/btn2"
+    <View style="@style/viewHorizontal" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="重叠控件显示"
-        android:layout_marginTop="8dp"/>
+        android:scrollbars="none">
 
-    <cn.utsoft.commons.customsimpleviewpager_demo.widght.HeapFrameLayout
-        android:id="@+id/hf"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="30dp"
-        android:visibility="gone"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <cn.bingoogolapple.bgabanner.BGABanner
+                    android:id="@+id/banner_main_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    app:banner_isNeedShowIndicatorOnOnlyOnePage="true"
+                    app:banner_numberIndicatorBackground="@drawable/shape_number_indicator_background"
+                    app:banner_numberIndicatorTextColor="@android:color/white"
+                    app:banner_pointAutoPlayAble="true"
+                    app:banner_pointContainerBackground="@android:color/transparent"
+                    app:banner_pointDrawable="@drawable/selector_banner_point"
+                    app:banner_transitionEffect="defaultEffect" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </ScrollView>
 </LinearLayout>
